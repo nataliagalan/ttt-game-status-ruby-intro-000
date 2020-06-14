@@ -31,12 +31,13 @@ WIN_COMBINATIONS.each do |win_combination|
     else
       false
      end
-
     end
-    if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+    
+    if board[index].nil? || board[index] == " "
       return false
         end
-won(board)
+        won(board)
+
   end
 
 
