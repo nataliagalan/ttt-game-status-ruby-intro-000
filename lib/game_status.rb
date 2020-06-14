@@ -10,7 +10,7 @@ WIN_COMBINATIONS = [
 [3,4,5], # middle_row
 [6,7,8], # bottom_row
 [0,3,6], # left_column
-[1,4,7], # center_column
+[1,4,7], # middle_column
 [2,5,8], # right_column
 [6,4,2], # right_diagonal
 [0,4,8] # left_diagonal
@@ -33,6 +33,22 @@ WIN_COMBINATIONS.each do |win_combination|
 
      end
     end
+WIN_COMBINATIONS.each do |win_combination|
+    win_index_4 = win_combination[4]
+    win_index_5 = win_combination[5]
+    win_index_6 = win_combination[6]
+    position_4 = board[win_index_1] # load the value of the board at win_index_1
+    position_5 = board[win_index_2] # load the value of the board at win_index_2
+    position_6 = board[win_index_3] # load the value of the board at win_index_3
+    position_4 == position_5 && position_5 == position_6 && position_taken?(board, win_index_4)
+
+    if position_4 == "X" && position_5 == "X" && position_6 == "X"
+        return win_combination # return the win_combination indexes that won.
+      else
+        false
+      end
+    end
+  
   end
 
 # returns falsey for an empty board
