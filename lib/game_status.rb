@@ -31,11 +31,11 @@ WIN_COMBINATIONS.each do |win_combination|
     else
       false
      end
-  if win_combination[" "]
-    return false
-      end
-
+  
     end
+    if win_combination[" "]
+      return false
+        end
 
   end
 
