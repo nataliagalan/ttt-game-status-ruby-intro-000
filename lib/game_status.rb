@@ -33,6 +33,7 @@ WIN_COMBINATIONS.each do |win_combination|
 
      end
     end
+  end
 
 # returns falsey for an empty board
 #    returns falsey for a draw
