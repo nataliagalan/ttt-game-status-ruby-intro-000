@@ -34,7 +34,7 @@ WIN_COMBINATIONS.each do |win_combination|
   if win_combination[" "]
     return false
       end
-     
+
     end
 
   end
