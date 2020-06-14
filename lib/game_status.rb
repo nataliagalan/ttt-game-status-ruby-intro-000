@@ -16,6 +16,12 @@ WIN_COMBINATIONS = [
 [0,4,8] # left_diagonal
 ]
 
+it 'returns an array of matching indexes for a left column win' do
+  board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
+
+  expect(won?(board)).to match_array([0,3,6])
+end
+
 def won?(board)
 WIN_COMBINATIONS.each do |win_combination|
   win_index_1 = win_combination[0]
@@ -32,8 +38,8 @@ WIN_COMBINATIONS.each do |win_combination|
       false
      end
     end
-
-    if board[index].nil? || board[index] == " "
+    
+    if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       return false
         end
         won(board)
