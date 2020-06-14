@@ -1,9 +1,8 @@
 # Helper Method
 def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ") : false
+  !(board[index].nil? || board[index] == " ")
 end
-end
-end
+
 
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
