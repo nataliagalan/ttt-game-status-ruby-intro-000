@@ -42,13 +42,6 @@ WIN_COMBINATIONS.each do |win_combination|
 
   end
 
-
-# returns falsey for an empty board
-#    returns falsey for a draw
-#    returns an array of matching indexes for a top row win
-#    returns an array of matching indexes for a middle row win
-#    returns an array of matching indexes for a bottom row win
-#    returns an array of matching indexes for a left column win
-#    returns an array of matching indexes for a right column win
-#    returns an array of matching indexes for a left diagonal win
-#    returns an array of matching indexes for a right diagonal win
+  def full?(board)
+     board.all? {|i| i == "X" || i == "O"}
+  end
