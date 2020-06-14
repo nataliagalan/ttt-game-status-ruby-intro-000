@@ -55,3 +55,9 @@ WIN_COMBINATIONS.each do |win_combination|
      return false
    end
 end
+
+def over?(board)
+   if draw?(board) || won?(board) || full?(board)
+     return true
+   end
+end
