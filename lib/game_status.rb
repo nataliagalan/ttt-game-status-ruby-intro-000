@@ -46,7 +46,7 @@ WIN_COMBINATIONS.each do |win_combination|
           position_6 = board[win_index_6] # load the value of the board at win_index_3
           position_4 == position_5 && position_5 == position_6 && position_taken?(board, win_index_4)
 
-          if position_4 == "X" && position_5 == "X" && position_6 == "X"
+          if position_4 == "O" && position_5 == "O" && position_6 == "O"
               return win_combination # return the win_combination indexes that won.
             else
               false
