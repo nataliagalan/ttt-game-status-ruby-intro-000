@@ -32,7 +32,7 @@ WIN_COMBINATIONS.each do |win_combination|
       false
      end
     end
-    
+
     if board[index].nil? || board[index] == " "
       return false
         end
