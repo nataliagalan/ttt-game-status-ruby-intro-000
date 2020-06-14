@@ -33,7 +33,8 @@ WIN_COMBINATIONS.each do |win_combination|
 
      end
     end
-if position_taken?(board, index) == false return false 
+if position_taken?(board, index) == false return false
+end
 
   end
 
