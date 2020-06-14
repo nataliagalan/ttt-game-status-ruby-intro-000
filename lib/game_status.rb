@@ -63,7 +63,13 @@ def over?(board)
   if draw?(board) || won?(board) || !full?(board)
      return true
    end
-  if !draw?(board) || !won?(board) || !full?(board)
+  if !over?(board)
       return false
 end
+end
+
+it 'returns false for an in-progress game' do
+  board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+
+  expect(over?(board)).to be_falsey
 end
