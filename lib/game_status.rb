@@ -55,7 +55,7 @@ WIN_COMBINATIONS.each do |win_combination|
 end
 
 def over?(board)
-  if draw?(board) || won?(board) || full?(board) 
+  if draw?(board) || won?(board) || full?(board)
     return true
   else
     return false
