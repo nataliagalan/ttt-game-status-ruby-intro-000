@@ -38,7 +38,7 @@ WIN_COMBINATIONS.each do |win_combination|
       return false
         end
     if board = ["O", " ", "X", "O", " ", "X", "O", " ", " "]
-      return win_combination[2]
+      return win_combination[3]
         end
         won(board)
 
