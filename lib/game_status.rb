@@ -33,15 +33,11 @@ WIN_COMBINATIONS.each do |win_combination|
       false
      end
  end
-end
-
 
     if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       return false
-        end
-
-        won(board)
-
+  end
+    won(board)
   end
 
   def full?(board)
