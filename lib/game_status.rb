@@ -33,21 +33,7 @@ WIN_COMBINATIONS.each do |win_combination|
 
      end
     end
-WIN_COMBINATIONS.each do |win_combination|
-    win_index_4 = win_combination[4]
-    win_index_5 = win_combination[5]
-    win_index_6 = win_combination[6]
-    position_4 = board[win_index_1] # load the value of the board at win_index_1
-    position_5 = board[win_index_2] # load the value of the board at win_index_2
-    position_6 = board[win_index_3] # load the value of the board at win_index_3
-    position_4 == position_5 && position_5 == position_6 && position_taken?(board, win_index_4)
-
-    if position_4 == "X" && position_5 == "X" && position_6 == "X"
-        return win_combination # return the win_combination indexes that won.
-      else
-        false
-      end
-    end
+if position_taken?(board, index) == false return false 
 
   end
 
