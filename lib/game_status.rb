@@ -1,6 +1,6 @@
 # Helper Method
 def position_taken?(board, index)
-  !(board[index].nil? || board[index] == " ")
+  !(board[index].nil? || board[index] == " ") : false
 end
 
 
@@ -33,9 +33,6 @@ WIN_COMBINATIONS.each do |win_combination|
 
      end
     end
-if position_taken?(board, index) == false return false
-end
-end
 
   end
 
