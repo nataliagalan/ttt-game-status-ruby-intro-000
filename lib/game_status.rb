@@ -33,12 +33,19 @@ WIN_COMBINATIONS.each do |win_combination|
      end
 
     end
-    if win_combination[" "]
+    if board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
       return false
         end
-
+won(board)
   end
 
+
+  describe "#won?" do
+    it 'returns falsey for an empty board' do
+      board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+      expect(won?(board)).to be_falsey
+    end
 # returns falsey for an empty board
 #    returns falsey for a draw
 #    returns an array of matching indexes for a top row win
